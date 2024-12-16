@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+
+
+    <h1>Todo List</h1>
+
+    <div class="container">
+        <div class="auth-container">
+            <section class="auth-section">
+                <h2>Signup</h2>
+                <input id="signup-username" placeholder="Username">
+                <input id="signup-password" type="password" placeholder="Password">
+                <button class="green-button" onclick="signup()">Register</button>
+            </section>
+
+            <section class="auth-section">
+                <h2>Login</h2>
+                <input id="login-username" placeholder="Username">
+                <input id="login-password" type="password" placeholder="Password">
+                <button class="green-button" onclick="login()">Login</button>
+            </section>
+        </div>
+
+        <div class="task-container">
+            <section id="task-section" style="display: none;">
+                <h2>Tasks</h2>
+                <input id="task-title" placeholder="Task Title">
+                <button class="green-button" onclick="createTask()">Add Task</button>
+                <ul id="tasks"></ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
